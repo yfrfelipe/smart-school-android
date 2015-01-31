@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.estevaonunes.smatschool2" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Login"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Menu"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_menu" >
+        </activity>
+        <activity
+            android:name=".Frequencia"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_frequencia" >
+        </activity>
+        <activity
+            android:name=".Diario"
+            android:label="@string/title_activity_diario" >
+        </activity>
+        <activity
+            android:name=".Perfil"
+            android:label="@string/title_activity_perfil" >
+        </activity>
+        <activity
+            android:name=".Configuracoes"
+            android:label="@string/title_activity_configuracoes" >
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+</manifest>

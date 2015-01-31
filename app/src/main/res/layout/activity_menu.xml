@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B9AF7"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="@string/home"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/linha"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff" />
+
+    </LinearLayout>
+
+    <com.example.estevaonunes.smatschool2.DashboardLayout
+        android:id="@+id/dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <Button
+            android:id="@+id/frequenciaBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableTop="@drawable/frequenciaicon"
+            android:text="@string/frequencia"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/diarioBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableTop="@drawable/diarioicon"
+            android:text="@string/diario"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/perfilBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableTop="@drawable/perfilicon"
+            android:text="@string/perfil"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/configuracaoBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableTop="@drawable/configicon"
+            android:text="@string/config"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/sairBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableTop="@drawable/sairicon"
+            android:text="@string/sair"
+            android:textColor="#FFFFFF" />
+
+
+    </com.example.estevaonunes.smatschool2.DashboardLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/dashboard"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="3"
+        android:src="@drawable/logo" />
+
+</LinearLayout>

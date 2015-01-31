@@ -1,0 +1,112 @@
+<android.support.v4.widget.SlidingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sliding_pane_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Menu Lateral -->
+    <LinearLayout
+        android:id="@+id/left_pane"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="#363636"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                android:src="@drawable/sairicon" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="4"
+                android:textStyle="bold"
+                android:text="Estevão Nunes"
+                android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                android:src="@drawable/sairicon" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lista_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <!-- Conteúdo da tela -->
+    <RelativeLayout
+        android:id="@+id/rightPane"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/barra"
+            android:layout_alignParentTop="true"
+            android:background="#1B9AF7"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:onClick="abrirMenu"
+                    android:src="@drawable/menuicon" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/frequencia"
+                android:textColor="#FFFFFF" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="#1B9AF7" />
+
+
+        </LinearLayout>
+
+        <ExpandableListView
+            android:id="@+id/lista_expansiva_semestres"
+            android:layout_below="@+id/barra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            </ExpandableListView>
+
+    </RelativeLayout>
+
+</android.support.v4.widget.SlidingPaneLayout>
